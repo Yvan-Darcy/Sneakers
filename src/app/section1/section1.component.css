@@ -1,0 +1,33 @@
+.selected-pic {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .selected-pic img {
+    display: block;
+  }
+  
+  .allpicz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  img {
+    border-radius: 20px; 
+    margin: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    opacity: 1; 
+  }
+  button:hover img,
+  img.selected { 
+    opacity: 0.7; 
+  }

@@ -1,0 +1,20 @@
+<h3>{{ companyName }}</h3>
+<h1 [innerHTML]="companyAttentionGrapper"></h1>
+<p [innerHTML]="companyAttentionGrapperText"></p>
+<h2>
+  {{ (price * discount) | currency: 'USD' }}
+  <em>{{ discount | percent }}</em>
+</h2>
+<p class="underline">{{ price | currency: 'USD' }}</p>
+<div>
+    <div class="twobuttons">
+        <div class="numberOfCharts">
+            <button class="btn" (click)="decrementQuantity()"><span>-</span></button>
+            <p>{{ quantity }}</p>
+            <button class="btn" (click)="incrementQuantity()"><span>+</span></button>
+        </div>
+        <div>
+            <button class="cartbtn"><i class="bi bi-cart3"></i>{{ cartAdd }}</button>
+        </div>
+    </div>
+</div>

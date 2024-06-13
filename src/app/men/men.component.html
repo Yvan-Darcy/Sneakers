@@ -1,0 +1,32 @@
+<div class="container">
+    <p>APi loading...!</p>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col bg-warning">Names</th>
+            <th scope="col">Epuipments</th>
+            <th scope="col">Types</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Muscles</th>
+            <th scope="col">Instructions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            @for(exercise of data; track exercise.name){
+            <tr>
+                    <td>{{exercise.name}}</td>
+                    <td>{{exercise.equipment}}</td>
+                    <td>{{exercise.type}}</td>
+                    <td>{{exercise.difficulty}}</td>
+                    <td>{{exercise.muscle}}</td>
+                    <td>{{exercise.instructions}}</td>
+            </tr>}
+
+        </tbody>
+    </table>
+</div>
+
+
+

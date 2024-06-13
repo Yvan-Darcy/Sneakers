@@ -1,0 +1,51 @@
+@import"/home/yvan/SNEAKERS/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+h3{
+    color: darkorange;
+}
+p{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h2 em{
+    padding-left: 10px;
+    color: darkorange;
+    background-color: bisque;
+    border-radius: 4px;
+}
+.underline{
+    text-decoration: line-through;
+}
+.twobuttons {
+    display: flex; 
+    align-items: center; 
+}
+
+.numberOfCharts {
+    display: flex; 
+    align-items: center;
+    background-color: bisque;
+    padding: 1px 40px;
+    border-radius: 4px;
+}
+.cartbtn{
+    padding: 20px 50px;
+    background-color: darkorange;
+    border-radius: 4px;
+    border: 0px;
+    margin-left: 10px;
+    font-size: medium;
+}
+.btn{
+    border: none;
+    background-color: bisque;
+}
+span{
+    color: darkorange;
+    font-size: x-large;
+    padding: 0px 10px;
+}
+i{
+    color: white;
+    padding-right: 10px;
+}
