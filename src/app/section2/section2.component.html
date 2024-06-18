@@ -1,12 +1,10 @@
-<h3>{{ companyName }}</h3>
-<h1 [innerHTML]="companyAttentionGrapper"></h1>
-<p [innerHTML]="companyAttentionGrapperText"></p>
-<h2>
-  {{ (price * discount) | currency: 'USD' }}
-  <em>{{ discount | percent }}</em>
-</h2>
-<p class="underline">{{ price | currency: 'USD' }}</p>
-<div>
+<div class="container">
+    <h4>{{ companyName }}</h4>
+    <h2 [innerHTML]="companyAttentionGrapper"></h2>
+    <p [innerHTML]="companyAttentionGrapperText"></p>
+    <h3>{{ (price * discount) | currency: 'USD' }}<em>{{ discount | percent }}</em></h3>
+    <p class="underline">{{ price | currency: 'USD' }}</p>
+
     <div class="twobuttons">
         <div class="numberOfCharts">
             <button class="btn" (click)="decrementQuantity()"><span>-</span></button>

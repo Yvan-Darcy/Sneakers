@@ -1,25 +1,29 @@
-<nav>
-  <div>
-    <div>
 
-      <div class="logo-container">
-        <a href="/collections" class="logo">Sneakers</a>
-      </div>
-     
-      <div class="links-container">
-        <ul>
-          <li ><a routerLink="/collections" routerLinkActive="Active">Collections</a></li>
-          <li ><a routerLink="/men" routerLinkActive="active">Men</a></li>
-          <li ><a routerLink="/women" routerLinkActive="active">Women</a></li>
-          <li ><a routerLink="/about" routerLinkActive="active">About</a></li>
-          <li ><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="icon">
-        <i class="bi bi-cart-fill"></i>
-      </div>
-      
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/collections">Sneakers</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/collections" routerLinkActive="active">Collections</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/men" routerLinkActive="active">Men</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/women" routerLinkActive="active">Women</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+    </ul>
+    <div class="icon">
+      <i class="bi bi-cart-fill"></i>
     </div>
 
   </div>
