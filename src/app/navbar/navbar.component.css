@@ -8,14 +8,14 @@
 .logo {
     display: block;
     font-weight: bolder; 
-    font-size: 70px;
+    font-size: 50px;
     color: black;
     text-decoration: none;
 }
 
 ul li{
     display: inline-block;
-    font-size: xx-large;
+    font-size: x-large;
     padding: 15px;
 }
 ul li a {
@@ -26,15 +26,12 @@ ul li a:hover{
     color:darkorange;
 }
 nav{
-    padding-left: 40px;
+    margin: 0px 60px;
     padding-top: 10px;
     padding-bottom: 20px;
     padding-right: 30px;
     border-bottom: 3px solid grey;
   }
-span{
-      color: darkorange;
-}
 .icon i {
     font-size: x-large;
     margin-left: 600px;

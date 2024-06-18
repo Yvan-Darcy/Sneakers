@@ -5,7 +5,7 @@ import { WomenComponent } from './women/women.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
-export const routes: Routes = [
+export const routes: Routes = [{path: '', redirectTo:'collections', pathMatch:'full'},
     {path:'collections', component: CollectionsComponent},
     {path:'men', component: MenComponent},
     {path:'women', component: WomenComponent},

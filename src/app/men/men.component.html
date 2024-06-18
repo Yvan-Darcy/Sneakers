@@ -1,32 +1,53 @@
+<!--div class="container">
+  <div class="loader" *ngIf="isLoading">
+    <div class="loader-content"></div>
+  </div>
+
+  <table class="table" *ngIf="!isLoading">  
+    <thead>
+      <tr>
+        <th scope="col bg-warning">Names</th>
+        <th scope="col">Epuipments</th>
+        <th scope="col">Types</th>
+        <th scope="col">Difficulty</th>
+        <th scope="col">Muscles</th>
+        <th scope="col">Instructions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(exercise of data; track exercise.name){
+      <tr>
+        <td>{{ exercise.name }}</td>
+        <td>{{ exercise.equipment }}</td>
+        <td>{{ exercise.type }}</td>
+        <td>{{ exercise.difficulty }}</td>
+        <td>{{ exercise.muscle }}</td>
+        <td>{{ exercise.instructions }}</td>
+      </tr>}
+    </tbody>
+  </table>
+</div-->
+
 <div class="container">
-    <p>APi loading...!</p>
+  <div class="loader" *ngIf="isLoading">
+    <div class="loader-content"></div>
+  </div>
 
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col bg-warning">Names</th>
-            <th scope="col">Epuipments</th>
-            <th scope="col">Types</th>
-            <th scope="col">Difficulty</th>
-            <th scope="col">Muscles</th>
-            <th scope="col">Instructions</th>
-          </tr>
-        </thead>
-        <tbody>
-
-            @for(exercise of data; track exercise.name){
-            <tr>
-                    <td>{{exercise.name}}</td>
-                    <td>{{exercise.equipment}}</td>
-                    <td>{{exercise.type}}</td>
-                    <td>{{exercise.difficulty}}</td>
-                    <td>{{exercise.muscle}}</td>
-                    <td>{{exercise.instructions}}</td>
-            </tr>}
-
-        </tbody>
-    </table>
+  <div class="row" *ngIf="!isLoading">
+    <div class="col-md-4 mb-4" *ngFor="let exercise of data; let i = index">
+      <div class="card" style="background-color: #f0f8ff;" *ngIf="i % 3 === 0 || i % 3 === 1 || i % 3 === 2">
+        <div class="card-header bg-warning">
+          <h5 class="card-title mb-0" style="color: blue;">{{ exercise.name }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text"><strong>Equipment:</strong> {{ exercise.equipment }}</p>
+          <p class="card-text"><strong>Type:</strong> {{ exercise.type }}</p>
+          <p class="card-text"><strong>Difficulty:</strong> {{ exercise.difficulty }}</p>
+          <p class="card-text"><strong>Muscles:</strong> {{ exercise.muscle }}</p>
+          <p class="card-text"><strong>Instructions:</strong> {{ exercise.instructions }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
 

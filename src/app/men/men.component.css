@@ -1,1 +1,47 @@
-@import "/home/yvan/SNEAKERS/node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "/home/yvan/SNEAKERS/node_modules/bootstrap/dist/css/bootstrap.min.css";*/
+.loader {
+    position: fixed; /* Keep the loader fixed on the screen */
+    left: 0; /* Align left to the edge of the page */
+    top: 0; /* Align top to the edge of the page */
+    width: 100%; /* Cover the whole width of the page */
+    height: 100%; /* Cover the whole height of the page */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Align horizontally in the center */
+    align-items: center; /* Align vertically in the center */
+  }
+  .loader .loader-content {
+    border: 10px solid #f3f3f3; /* Light gray border */
+    border-radius: 50%; /* Make it a circle */
+    border-top: 10px solid #3498db; /* Blue spinning part */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    animation: spin 1s linear infinite; /* Add spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .container {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 10px; 
+    border: 2px solid #ddd; 
+    border-radius: 20px; 
+    background-color: #f7fbfb; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .card-header {
+    padding: 10px 15px; 
+  }
+  
+  .card-body {
+    padding: 15px; 
+  }
+   

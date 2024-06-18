@@ -13,7 +13,7 @@ export class DataService {
 
   getExercisesByMuscle(muscle: string): Observable<any> {
     const headers = new HttpHeaders().append('X-Api-Key', this.apiKey);
-    console.log('aaaa', this.http.get(`${this.apiUrl}?muscle=${muscle}`, { headers }))
+    //console.log('aaaa', this.http.get(`${this.apiUrl}?muscle=${muscle}`, { headers }))
     return this.http.get(`${this.apiUrl}?muscle=${muscle}`, { headers });
   }
 }
