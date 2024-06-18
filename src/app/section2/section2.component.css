@@ -35,9 +35,12 @@ h3 em{
     margin-left: 10px;
     font-size: medium;
 }
-.btn{
+.boutton{
     border: none;
     background-color: bisque;
+}
+.chiffre{
+    padding-top: 10px;
 }
 span{
     color: darkorange;

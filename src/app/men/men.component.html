@@ -34,6 +34,7 @@
   </div>
 
   <div class="row" *ngIf="!isLoading">
+    <h1>Welcome To Our Gym</h1>
     <div class="col-md-4 mb-4" *ngFor="let exercise of data; let i = index">
       <div class="card" style="background-color: #f0f8ff;" *ngIf="i % 3 === 0 || i % 3 === 1 || i % 3 === 2">
         <div class="card-header bg-warning">
